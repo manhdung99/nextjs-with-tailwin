@@ -25,10 +25,14 @@ export default function Login() {
     },
   ];
   return (
+      <>
+      <Head>
+          <title>Login</title>
+      </Head>
     <div className="flex justify-center">
       <div className=" w-[400px] bg-[#fff] relative ">
         <h1 className="text-center pt-[20px] text-[32px] font-bold tracking-[1px]">
-          Register
+          Login
         </h1>
         <form className="px-[40px]">
           {inputForms.map((inputForm, index) => (
@@ -48,26 +52,6 @@ export default function Login() {
               <small></small>
             </div>
           ))}
-
-          {/* <div className="relative border-b-2 border-[#adadad] my-[40px]">
-          <input className='outline-0 h-[40px] w-[100%] text-[16px] bg-inherit' type="email" id="email" placeholder="Email" />
-          <span></span>
-          <small></small>
-        </div>
-        <div className="relative border-b-2 border-[#adadad] my-[40px]">
-          <input className='outline-0 h-[40px] w-[100%] text-[16px] bg-inherit' type="password" id="password" placeholder="Password" />
-          <span></span>
-          <small></small>
-        </div>
-        <div className="relative border-b-2 border-[#adadad] my-[40px]">
-          <input className='outline-0 h-[40px] w-[100%] text-[16px] bg-inherit'
-            type="password"
-            id="password2"
-            placeholder="Confirm password"
-          />
-          <span></span>
-          <small></small>
-        </div> */}
           <input
             className=" ml-[50%] translate-x-[-50%] bg-[#2691d9] text-white w-[100%] h-[50px] rounded-[25px] cursor-pointer hover:bg-[#08609a] font-bold text-[24px] "
             type="submit"
@@ -82,5 +66,6 @@ export default function Login() {
         </form>
       </div>
     </div>
+    </>
   );
 }
