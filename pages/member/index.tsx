@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
 import {
@@ -41,8 +42,8 @@ export default function Profile() {
         <div className=" flex justify-center ">
 			{socialList.map((sociaItem,index) =>(
 				<Link key={index} href={sociaItem.link}>
-				<a className="mx-[20px] mt-[20px] mb-[40px] text-white hover:text-[#f2726a]" target="_black">
-					<FontAwesomeIcon icon={sociaItem.icon} style={{fontSize : '24px'}} />
+				<a className="mx-[20px] mt-[20px] mb-[40px] text-white hover:text-[#f2726a]">
+					<FontAwesomeIcon icon={sociaItem.icon} className="w-[24px] h-[24px]" />
 				</a>
 				</Link>
 			))}
