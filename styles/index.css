@@ -3,4 +3,13 @@
 @tailwind utilities;
 
 
+@layer utilities {
+    .icon-24{
+      width: 24px !important ;
+      height: 24px;
+    }
+
+}
+
+
     

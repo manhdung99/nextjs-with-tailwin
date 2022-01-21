@@ -43,7 +43,7 @@ export default function Profile() {
 			{socialList.map((sociaItem,index) =>(
 				<Link key={index} href={sociaItem.link}>
 				<a className="mx-[20px] mt-[20px] mb-[40px] text-white hover:text-[#f2726a]">
-					<FontAwesomeIcon icon={sociaItem.icon} className="w-[24px] h-[24px]" />
+					<FontAwesomeIcon icon={sociaItem.icon} className="icon-24" />
 				</a>
 				</Link>
 			))}
